@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Plugin metadata for DalamudPackager -->
+    <AssemblyName>BlackJackTracker</AssemblyName>
+    <RootNamespace>BlackJackTracker</RootNamespace>
+    <PluginAuthor>Tsuki N'haro</PluginAuthor>
+    <PluginName>BlackJackTracker</PluginName>
+    <DalamudPlugin>true</DalamudPlugin>
+    <DalamudPluginManifest>BlackJackTracker.json</DalamudPluginManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DalamudPackager" Version="12.0.0" />
+    <PackageReference Include="ImGui.NET" Version="1.87.3" />
+    <Reference Include="Dalamud">
+      <HintPath>Libs\Dalamud.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

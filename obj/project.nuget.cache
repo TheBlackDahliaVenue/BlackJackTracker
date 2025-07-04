@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "97z189tEf+0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chazc\\Desktop\\BlackjackTrackerv3\\BlackJackTraker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chazc\\.nuget\\packages\\dalamudpackager\\12.0.0\\dalamudpackager.12.0.0.nupkg.sha512",
+    "C:\\Users\\chazc\\.nuget\\packages\\imgui.net\\1.87.3\\imgui.net.1.87.3.nupkg.sha512",
+    "C:\\Users\\chazc\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\chazc\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\chazc\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

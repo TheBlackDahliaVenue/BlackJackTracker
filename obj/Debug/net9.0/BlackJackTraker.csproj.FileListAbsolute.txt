@@ -1,0 +1,12 @@
+C:\Users\chazc\Desktop\BlackjackTrackerv3\bin\Debug\net9.0\BlackJackTracker.deps.json
+C:\Users\chazc\Desktop\BlackjackTrackerv3\bin\Debug\net9.0\BlackJackTracker.dll
+C:\Users\chazc\Desktop\BlackjackTrackerv3\bin\Debug\net9.0\BlackJackTracker.pdb
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTraker.csproj.AssemblyReference.cache
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTraker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTraker.AssemblyInfoInputs.cache
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTraker.AssemblyInfo.cs
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTraker.csproj.CoreCompileInputs.cache
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTracker.dll
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\refint\BlackJackTracker.dll
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\BlackJackTracker.pdb
+C:\Users\chazc\Desktop\BlackjackTrackerv3\obj\Debug\net9.0\ref\BlackJackTracker.dll

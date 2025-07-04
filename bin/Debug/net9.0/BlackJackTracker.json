@@ -1,0 +1,20 @@
+{
+  "Author": "Tsuki N'haro",
+  "Name": "BlackJackTracker",
+  "InternalName": "BlackJackTracker",
+  "AssemblyVersion": "1.0.0.0",
+  "Description": "A Blackjack tracker plugin for Dalamud",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "party",
+    "blackjack",
+    "simple"
+  ],
+  "DalamudApiLevel": 12,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "An awesome plugin that does cool things.",
+  "AcceptsFeedback": true
+}
