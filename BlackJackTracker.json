@@ -1,10 +1,19 @@
 {
   "Author": "Tsuki N'haro",
   "Name": "BlackJackTracker",
-  "Version": "1.0.0",
-  "Punchline": "An awesome plugin that does cool things.",
-  "DownloadLink": "https://github.com/TheBlackDahliaVenue/BlackJackTracker",
-  "Description": "A Blackjack tracker plugin for Dalamud",
+  "Punchline": "A Blackjack tracker plugin for Dalamud.",
+  "Description": "Tracks Blackjack rolls in party and displays winners.",
+  "InternalName": "BlackJackTracker",
+  "AssemblyVersion": "1.0.0.0",
+  "TestingAssemblyVersion": "1.0.0.0",
+  "RepoUrl": "https://github.com/TheBlackDahliaVenue/BlackJackTracker",
+  "ApplicableVersion": "any",
   "DalamudApiLevel": 12,
-  "Tags": ["party", "blackjack", "simple"]
+  "DownloadLinkInstall": "https://raw.githubusercontent.com/TheBlackDahliaVenue/BlackJackTracker/main/BlackJackTracker.zip",
+  "DownloadLinkTesting": "https://raw.githubusercontent.com/TheBlackDahliaVenue/BlackJackTracker/main/BlackJackTracker.zip",
+  "DownloadLinkUpdate": "https://raw.githubusercontent.com/TheBlackDahliaVenue/BlackJackTracker/main/BlackJackTracker.zip",
+  "Tags": [ "blackjack", "party", "game" ],
+  "IsHide": false,
+  "IsTestingExclusive": false
 }
+
