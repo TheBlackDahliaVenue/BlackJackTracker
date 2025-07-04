@@ -9,7 +9,7 @@
   "RepoUrl": "https://github.com/TheBlackDahliaVenue/BlackJackTracker",
   "ApplicableVersion": "any",
   "DalamudApiLevel": 12,
-  "DownloadLinkInstall": "https://raw.githubusercontent.com/TheBlackDahliaVenue/BlackJackTracker/main/BlackJackTracker.zip",
+  "DownloadLinkInstall": "https://github.com/TheBlackDahliaVenue/BlackJackTracker/releases/download/plogon/BlackJackTracker.dll",
   "DownloadLinkTesting": "https://raw.githubusercontent.com/TheBlackDahliaVenue/BlackJackTracker/main/BlackJackTracker.zip",
   "DownloadLinkUpdate": "https://raw.githubusercontent.com/TheBlackDahliaVenue/BlackJackTracker/main/BlackJackTracker.zip",
   "Tags": [ "blackjack", "party", "game" ],
