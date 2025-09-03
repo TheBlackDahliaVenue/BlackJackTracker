@@ -165,24 +165,35 @@ namespace Blackjack.GameModules
 
             _winners.Clear();
 
+            // Track which hands won for each player
+            var winningHandsPerPlayer = new Dictionary<string, List<int>>();
+
             foreach (var kvp in _hands)
             {
                 var playerName = kvp.Key;
                 if (playerName == _dealer)
-                    continue; // skip dealer in loop
+                    continue;
 
                 var playerHand = kvp.Value;
-                int playerScore = playerHand.Hands
-                    .Select(GetBestScoreForHand)
-                    .Where(score => score <= 21)
-                    .DefaultIfEmpty(0)
-                    .Max();
 
-                if (playerScore == 0) continue; // busted
-
-                if (dealerBusted || playerScore > dealerScore)
+                for (int i = 0; i < playerHand.Hands.Count; i++)
                 {
-                    _winners.Add(playerName);
+                    var hand = playerHand.Hands[i];
+                    int score = GetBestScoreForHand(hand);
+
+                    if (score > 21) continue;
+
+                    if (dealerBusted || score > dealerScore)
+                    {
+                        if (!_winners.Contains(playerName))
+                            _winners.Add(playerName);
+
+                        if (!winningHandsPerPlayer.ContainsKey(playerName))
+                            winningHandsPerPlayer[playerName] = new List<int>();
+                        winningHandsPerPlayer[playerName].Add(i);
+
+                        _log.Debug($"{playerName} hand #{i + 1} wins with {score} against dealer {dealerScore}");
+                    }
                 }
             }
 
@@ -192,17 +203,29 @@ namespace Blackjack.GameModules
                     .Select(w => _hands[w].Hands.Select(GetBestScoreForHand).Max())
                     .Max();
 
-                var winnerDisplayNames = _winners
-                    .Select(n => _partyPlayerDisplayNames.TryGetValue(n, out var dn) ? dn : n)
-                    .ToList();
+                var winnerMessages = new List<string>();
+                foreach (var winner in _winners)
+                {
+                    if (winningHandsPerPlayer.TryGetValue(winner, out var hands))
+                    {
+                        var handScores = hands
+                            .Select(idx => GetBestScoreForHand(_hands[winner].Hands[idx]))
+                            .ToList();
+                        string handsStr = string.Join(", ", handScores.Select((s, idx) => $"Hand {idx + 1}: {s}"));
+                        winnerMessages.Add($"{GetDisplayName(winner)} ({handsStr})");
+                    }
+                    else
+                    {
+                        winnerMessages.Add(GetDisplayName(winner));
+                    }
+                }
 
-                _lastWinnerMessage = $"[Blackjack] Winner(s): {string.Join(", ", winnerDisplayNames)} against dealer ({dealerScore})!";
-                _log.Debug($"Winners: {string.Join(", ", winnerDisplayNames)} vs dealer {dealerScore}");
+                _lastWinnerMessage = $"[Blackjack] Winner(s): {string.Join(", ", winnerMessages)} against dealer ({dealerScore})!";
+                _log.Debug($"Winners: {string.Join(", ", winnerMessages)} vs dealer {dealerScore}");
                 AnnounceWinnersToParty();
             }
             else
             {
-                // Dealer wins
                 WinningScore = dealerScore;
                 _lastWinnerMessage = "[Blackjack] Dealer wins!";
                 _chat.Print(_lastWinnerMessage);
