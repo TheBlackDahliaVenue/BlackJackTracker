@@ -1,0 +1,21 @@
+[
+  {
+    "Author": "Tsuki N'haro",
+    "Name": "BlackJackTracker",
+    "Description": "A custom plugin for TBD via Dalamud",
+    "InternalName": "BlackJackTracker",
+    "AssemblyVersion": "1.0.0.0",
+    "TestingAssemblyVersion": null,
+    "RepoUrl": "https://github.com/TheBlackDahliaVenue/BlackJackTracker",  
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 13,
+    "Punchline": "TBD Party Game Plugin",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/TheBlackDahliaVenue/XFC/releases/download/v1.0.0.0/BlackJackTracker.zip",
+    "DownloadLinkTesting": "",
+    "DownloadLinkUpdate": "https://github.com/TheBlackDahliaVenue/XFC/releases/download/v1.0.0.0/BlackJackTracker.zip",
+    "LastUpdate": 1754790414,
+    "Tags": [ "custom", "tbd" ]
+  }
+]

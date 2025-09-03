@@ -1,0 +1,10 @@
+{
+  "Author": "Tsuki N'haro",
+  "Name": "BlackJackTracker",
+  "Version": "1.0.0.0",
+  "Punchline": "TBD Party Plugins",
+  "DownloadLink": "https://github.com/TheBlackDahliaVenue/BlackJackTracker",
+  "Description": "A Blackjack tracker plugin for Dalamud",
+  "DalamudApiLevel": 13,
+  "Tags": ["party", "blackjack", "simple"]
+}
