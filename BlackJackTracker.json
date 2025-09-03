@@ -3,7 +3,7 @@
   "Name": "BlackJackTracker",
   "Description": "A Blackjack tracker plugin for Dalamud",
   "InternalName": "BlackJackTracker",
-  "AssemblyVersion": "1.0.0.0",
+  "AssemblyVersion": "1.0.0.1",
   "TestingAssemblyVersion": null,
   "RepoUrl": "https://github.com/TheBlackDahliaVenue/BlackJackTracker",
   "ApplicableVersion": "any",
@@ -17,5 +17,6 @@
   "LastUpdate": 1754790414,
   "Tags": [ "party", "blackjack", "simple" ]
 }
+
 
 
