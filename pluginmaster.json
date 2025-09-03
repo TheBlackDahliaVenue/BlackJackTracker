@@ -12,9 +12,9 @@
     "Punchline": "TBD Party Game Plugin",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/TheBlackDahliaVenue/BlackJackTracker/releases/download/v1.0.0.0/BlackJackTracker.zip",
+    "DownloadLinkInstall": "https://github.com/TheBlackDahliaVenue/BlackJackTracker/releases/download/v1.0.0.1/BlackJackTracker.zip",
     "DownloadLinkTesting": "",
-    "DownloadLinkUpdate": "https://github.com/TheBlackDahliaVenue/BlackJackTracker/releases/download/v1.0.0.0/BlackJackTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/TheBlackDahliaVenue/BlackJackTracker/releases/download/v1.0.0.1/BlackJackTracker.zip",
     "LastUpdate": 1756949017,
     "Tags": [ "custom", "tbd" ]
   }
